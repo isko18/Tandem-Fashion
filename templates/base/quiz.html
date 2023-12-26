@@ -1,0 +1,363 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опросник</title>
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/icofont.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/meanmenu.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/dark.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+
+    <title>Arlo</title>
+</head>
+
+<body >
+    <!-- <section class="quizpg container">
+        <h1 class="quizpg_title">Пройдите опросник чтобы расчитать стоимость</h1>
+        <div class="question">
+            <h3 class="quizpg_title2">
+                Какая у вас специализация бизнеса?
+            </h3>
+            <form>
+                <div class="question_item">
+                    <input type="checkbox">
+                    <span>Sport</span>
+                </div>
+                <div class="question_item">
+                    <input type="checkbox">
+                    <span>Live</span>
+                </div>
+                <div class="question_item">
+                    <input type="checkbox">
+                    <span>React</span>
+                </div>
+
+            </form>
+        </div>
+        <div class="question">
+            <h3 class="quizpg_title2">
+                Какой объем заказов вы планируете продавать в месяц?
+            </h3>
+            <form>
+                <div class="question_item">
+                    <input type="checkbox">
+                    <span>До 500 единиц товара</span>
+                </div>
+                <div class="question_item">
+                    <input type="checkbox">
+                    <span>До 1000 единиц товара</span>
+                </div>
+                <div class="question_item">
+                    <input type="checkbox">
+                    <span>До 3000 единиц товара</span>
+                </div>
+                <div class="question_item">
+                    <input type="checkbox">
+                    <span>До 5000 единиц товара</span>
+                </div>
+                <div class="question_item">
+                    <input type="checkbox">
+                    <span>До 10000 единиц товара</span>
+                </div>
+                <div class="question_item">
+                    <input type="checkbox">
+                    <span>Свыше 20000 единиц товара</span>
+                </div>
+            </form>
+        </div>
+        <div class="question">
+            <h3 class="quizpg_title2">
+                В какой стране вы находитесь?
+            </h3>
+            <form>
+                <div class="question_item">
+                    <input type="checkbox">
+                    <span>Кыргызстан</span>
+                </div>
+                <div class="question_item">
+                    <input type="checkbox">
+                    <span>Узбекистан</span>
+                </div>
+                <div class="question_item">
+                    <input type="checkbox">
+                    <span>Таджикистан</span>
+                </div>
+                <div class="question_item">
+                    <input type="checkbox">
+                    <span>Казахстан</span>
+                </div>
+                <div class="question_item">
+                    <input type="checkbox">
+                    <span>Туркменистан</span>
+                </div>
+                <div class="question_item">
+                    <input type="checkbox">
+                    <span>Российская Федерация</span>
+                </div>
+                <div class="question_item">
+                    <label  >Другое</label>
+                    <input type="text" placeholder="..." class="txtinput">
+                </div>
+            </form>
+        </div>
+        <div class="question">
+            <h3 class="quizpg_title2">
+                С какими маркетплейсами вы планируете работать?
+            </h3>
+            <form>
+                <div class="question_item">
+                    <input type="checkbox">
+                    <span>Wildberries</span>
+                </div>
+                <div class="question_item">
+                    <input type="checkbox">
+                    <span>OZON</span>
+                </div>
+                <div class="question_item">
+                    <input type="checkbox">
+                    <span>KazanExpress</span>
+                </div>
+                <div class="question_item">
+                    <input type="checkbox">
+                    <span>ЯндексМаркет</span>
+                </div>
+                <div class="question_item">
+                    <input type="checkbox">
+                    <span>LaModa</span>
+                </div>
+                <div class="question_item">
+                    <label  >Другое</label>
+                    <input type="text" placeholder="..." class="txtinput">
+                </div>
+            </form>
+        </div>
+        <div class="question">
+            <h3 class="quizpg_title2">
+                В какой стране вы находитесь?
+            </h3>
+            <form>
+
+              
+                <div class="question_item">
+                    <input type="text" placeholder="..." class="txtinput">
+                </div>
+            </form>
+        </div>
+        <div class="question">
+            <h3 class="quizpg_title2">
+                Напишите ваш сайт/ссылку на социальные сети
+            </h3>
+            <form>
+
+              
+                <div class="question_item">
+                    <input type="text" placeholder="..." class="txtinput">
+                </div>
+            </form>
+        </div>
+
+
+<button onclick="onSucces()" class="quiz_button">Отправить</button>
+    </section> -->
+    <div class="quiz container">
+        <div class="quiz_render">
+            <div class="quiz_step1 quiz_step">
+                <h1 class="quiz_title">Какая у вас специализация бизнеса? </h1>
+                <form  onsubmit="return validateFormCheckbox('spets',event)"> 
+                    <div class="quiz_item">
+                        <input type="checkbox" name='spets'>
+                        <span>Sport</span>
+                    </div>
+                    <div class="quiz_item">
+                        <input type="checkbox" name='spets'>
+                        <span>Sport</span>
+                    </div>
+                    <div class="quiz_item">
+                        <input type="checkbox" name='spets'>
+                        <span>Sport</span>  
+                    </div>
+                    <div class="quiz_item">
+                        <input type="checkbox" name='spets'>
+                        <span>Sport</span>
+                    </div>
+                    <div class="quiz_item">
+                        <input type="checkbox" name='spets'>
+                        <span>Sport</span>
+                    </div>
+                    <div class="quiz_item">
+                        <input type="checkbox" name='spets'>
+                        <span>Sport</span>
+                    </div>
+                    <div class="quiz_item">
+                        <input type="checkbox" name='spets'>
+                        <span>Sport</span>
+                    </div>
+                    <div class="quiz_item">
+                        <input type="checkbox" name='spets'>
+                        <span>Sport</span>
+                    </div>
+                    <button>Далее</button>
+                </form>
+            </div>
+        </div>
+        <div class="hidden">
+            <div class="quiz_step2 quiz_step" onsubmit="return validateFormCheckbox('products',event)">
+                <h1 class="quiz_title">Какой объем заказов вы планируете продавать в месяц?</h1>
+                <form>
+                    <div class="quiz_item">
+                        <input type="radio" name="products">
+                        <span>До 500 единиц товара</span>
+                    </div>
+                    <div class="quiz_item">
+                        <input type="radio" name="products">
+                        <span>До 1000 единиц товара</span>
+                    </div>
+                    <div class="quiz_item">
+                        <input type="radio" name="products">
+                        <span>До 3000 единиц товара</span>
+                    </div>
+                    <div class="quiz_item">
+                        <input type="radio" name="products">
+                        <span>До 5000 единиц товара</span>
+                    </div>
+                    <div class="quiz_item">
+                        <input type="radio" name="products">
+                        <span>До 10000 единиц товара</span>
+                    </div>
+                    <div class="quiz_item">
+                        <input type="radio" name="products">
+                        <span>Свыше 20000 единиц товара</span>
+                    </div>
+                    <button>Далее</button>
+
+                </form>
+            </div>
+            <div class="quiz_step3 quiz_step">
+                <h1 class="quiz_title">В какой стране вы находитесь?</h1>
+                <form onsubmit="return validateCountry('country',event)">
+                    <div class="quiz_item">
+                        <input type="radio" name="country" onclick="quiz_step3()">
+                        <span>Кыргызстан</span>
+                    </div>
+                    <div class="quiz_item">
+                        <input type="checkbox" name="country">
+                        <span>Узбекистан </span>
+                    </div>
+                    <div class="quiz_item">
+                        <input type="radio" name="country">
+                        <span>Таджикистан</span>
+                    </div>
+                    <div class="quiz_item">
+                        <input type="radio" name="country">
+                        <span>Казахстан</span>
+                    </div>
+                    <div class="quiz_item">
+                        <input type="radio" name="country">
+                        <span>Туркменистан</span>
+                    </div>
+                    <div class="quiz_item">
+                        <input type="radio" name="country">
+                        <span>Российская Федерация</span>
+                    </div>
+                    <div class="quiz_custom">
+                        <div>Другое</div>
+                        <input type="text" placeholder="Введите свою страну" class="you_country">
+
+                    </div>
+                    <button>Далее</button>
+
+                </form>
+            </div>
+            <div class="quiz_step4 quiz_step">
+                <div class="quiz_title">
+                    С какими маркетплейсами вы планируете работать?
+                </div>
+                <form >
+                    <div class="quiz_item" onclick="onMarket()">
+                        <img src="{% static 'assets/img/slider/wildberries-logo.png' %}" alt="">
+                    </div>
+                    <div class="quiz_item" onclick="onMarket()">
+                        <img src="{% static 'assets/img/slider/Lamoda_logo.svg.png' %}" alt="">
+                    </div>
+                    <div class="quiz_item" onclick="onMarket()">
+                        <img src="{% static 'assets/img/slider/kazan-removebg-preview.png' %}" alt="">
+                    </div>
+                    <div class="quiz_item" onclick="onMarket()">
+                        <img src="{% static 'assets/img/slider/Logo-yandexmarket.-kompaktnyi-.png' %}" alt="">
+                    </div>
+                    <div class="quiz_item" onclick="onMarket()"         >
+                        <img src="{% static 'assets/img/slider/ozon-logo-clear.svg' %}" alt="">
+                    </div>
+            
+
+                </form>
+            </div>
+            <div class="quiz_step5 quiz_step">
+                <h1 class="quiz_title">Название вашей компании</h1>
+                <form onsubmit="return oneInputValid(event,'name_company')">
+                    <input type="text" placeholder="Google LLC..." class="name_company">
+                    <button>Далее</button>
+
+                </form>
+            </div>
+            <div class="quiz_step6">
+                <h1 class="quiz_title">Напишите ваш сайт/ссылку на социальные сети</h1>
+                <form onsubmit="return oneInputValid(event,'name_website')">
+                    <input type="text" placeholder="https://google.com/" class="name_website">
+                    <button>Далее</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="succesModal_overlay close_succes " onclick="onSucces(event)">
+
+        <div class="succesModal  container close_succes">
+            <h2>Спасибо за ответы!</h2>
+            <p>Оставьте свои контактные данные, чтобы получить коммерческое предложение на выгодных условиях и
+                консультацию эксперта по фулфилменту</p>
+            <form>
+                <input type="text" placeholder="Имя">
+                <input type="number" placeholder="Телефон">
+                <input type="email" placeholder="email">
+                <button>
+                    получить расчет стоимости
+                </button>
+            </form>
+        </div>
+
+    </div>
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.ajaxchimp.min.js' %}"></script>
+    <script src="{% static 'assets/js/form-validator.min.js' %}"></script>
+    <script src="{% static 'assets/js/contact-form-script.js' %}"></script>
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/meanmenu.js' %}"></script>
+    <script src="{% static 'assets/js/quiz.js' %}"></script>
+</body>
+
+</html>
